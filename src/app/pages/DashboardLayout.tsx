@@ -7,8 +7,6 @@ import {
   Bell, 
   User, 
   Wallet, 
-  Settings,
-  LogOut,
   ChevronDown,
   Shield
 } from 'lucide-react';
@@ -35,26 +33,6 @@ export function DashboardLayout() {
     'LUCKY 7',
     'CRASH',
     'HORSE RACING',
-  ];
-
-  const horseRacingEvents = [
-    { time: '15:50', location: 'Gloucester Park (AU)' },
-    { time: '16:10', location: 'Junee (AU)' },
-    { time: '16:10', location: 'Vaal (ZA)' },
-    { time: '16:12', location: 'Angers (FR)' },
-    { time: '16:20', location: 'Gloucester Park (AU)' },
-    { time: '16:30', location: 'Cagnes-sur-Mer (FR)' },
-    { time: '16:45', location: 'Vaal (ZA)' },
-    { time: '16:47', location: 'Angers (FR)' },
-    { time: '16:50', location: 'Gloucester Park (AU)' },
-    { time: '17:05', location: 'Cagnes-sur-Mer (FR)' },
-    { time: '17:15', location: 'Gloucester Park (AU)' },
-    { time: '17:20', location: 'Vaal (ZA)' },
-    { time: '17:22', location: 'Angers (FR)' },
-    { time: '17:40', location: 'Cagnes-sur-Mer (FR)' },
-    { time: '17:47', location: 'Gloucester Park (AU)' },
-    { time: '17:55', location: 'Vaal (ZA)' },
-    { time: '17:57', location: 'Angers (FR)' },
   ];
 
   return (

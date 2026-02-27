@@ -1,5 +1,5 @@
 import { Tv, Star, Lock, Circle, ChevronRight } from 'lucide-react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { matches } from '../../services/mockData';
 
 // Helper function to get the correct route based on match type
@@ -15,6 +15,8 @@ function getMatchRoute(match: typeof matches[0]): string {
 }
 
 export function MatchList() {
+  const navigate = useNavigate();
+
   return (
     <div className="relative group">
       {/* Subtle glow effect on hover */}
@@ -258,7 +260,7 @@ export function MatchList() {
                           ? 'bg-gray-800' 
                           : 'hover:bg-violet-50/20 cursor-pointer'
                       }`}
-                      onClick={() => !isLocked && (window.location.href = matchRoute)}
+                      onClick={() => !isLocked && navigate(matchRoute)}
                     >
                       {/* Game name and time */}
                       <td className={`px-2 sm:px-3 py-2 ${isLocked ? 'text-white' : 'text-gray-900'} min-w-[140px] sm:min-w-[180px]`}>
